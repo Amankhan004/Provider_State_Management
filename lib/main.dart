@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_state_management/provider/favouriteitem_provider.dart';
 import 'package:provider_state_management/provider/slider_provider.dart';
 import 'package:provider_state_management/screen/slider_screen.dart';
 
@@ -14,7 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-        providers: [ChangeNotifierProvider(create: (_) => SliderProvider())],
+        providers: [
+          ChangeNotifierProvider(create: (_) => SliderProvider()),
+          ChangeNotifierProvider(create: (_) => FavouriteItemProvider()),
+
+          ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Provider State Management',
