@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/provider/theme_changer_provider.dart';
+import 'package:provider_state_management/screen/val_notify_screen.dart';
 
 class DarkThemeScreen extends StatelessWidget {
   const DarkThemeScreen({super.key});
@@ -31,11 +32,17 @@ class DarkThemeScreen extends StatelessWidget {
                   value: ThemeMode.system,
                   groupValue: value.themeMode,
                   onChanged: value.setTheme),
-              Icon(Icons.favorite)
+              Icon(Icons.favorite),
             ],
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.arrow_circle_right),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => NotifiyScreen()));
+          }),
     );
   }
 }
