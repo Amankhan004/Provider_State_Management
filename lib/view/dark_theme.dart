@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/provider/theme_changer_provider.dart';
-import 'package:provider_state_management/screen/val_notify_screen.dart';
+import 'package:provider_state_management/view/val_notify_screen.dart';
 
 class DarkThemeScreen extends StatelessWidget {
   const DarkThemeScreen({super.key});

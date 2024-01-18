@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider_state_management/screen/login.dart';
+import 'package:provider_state_management/view/login.dart';
 
 // ignore: must_be_immutable
 class NotifiyScreen extends StatelessWidget {

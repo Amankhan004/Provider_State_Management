@@ -4,7 +4,7 @@ import 'package:provider_state_management/provider/auth_provider.dart';
 import 'package:provider_state_management/provider/favouriteitem_provider.dart';
 import 'package:provider_state_management/provider/slider_provider.dart';
 import 'package:provider_state_management/provider/theme_changer_provider.dart';
-import 'package:provider_state_management/screen/slider_screen.dart';
+import 'package:provider_state_management/view/slider_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/provider/slider_provider.dart';
-import 'package:provider_state_management/screen/favourites/favourit_screen.dart';
+import 'package:provider_state_management/view/favourites/favourit_screen.dart';
 
 // ignore: must_be_immutable
 class SliderScreen extends StatelessWidget {
