@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider_state_management/screen/login.dart';
 
 // ignore: must_be_immutable
 class NotifiyScreen extends StatelessWidget {
@@ -14,6 +15,7 @@ class NotifiyScreen extends StatelessWidget {
         title: const Center(child: Text("Value Notifier")),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           ValueListenableBuilder(
             valueListenable: toggle,
@@ -43,6 +45,12 @@ class NotifiyScreen extends StatelessWidget {
               },
             ),
           ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
+              },
+              child: const Text("nav to LoginScreen"))
         ],
       ),
       floatingActionButton: FloatingActionButton(
